@@ -1,0 +1,98 @@
+body {
+    background-color: #002b36;
+    color: #839496;
+}
+nav {
+    margin-bottom: 10px;
+}
+#aboutMe {
+    width: 70%;
+    font-size: 1.5rem;
+    margin: 8% auto;
+}
+#aboutMe img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px
+}
+.skills {
+    align-self: center;
+    margin: 3% 10%
+
+}
+.myImg {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10%;
+}
+.skillsDiv {
+    display: inline-block;
+    margin: 5%;
+    text-align: center;
+}
+.about {
+    align-self: center;
+}
+.contact {
+    margin: 0 auto;
+    width: 30%
+}
+.contact button {
+    margin: 10% 45%;
+}
+.orange{
+    color: rgb(181,137,0);
+}
+h1 {
+    text-align: center;
+    margin-bottom:5%;
+}
+#projects {
+    width: 90%;
+    align-self: center;
+}
+.inputBox {
+    height: 60px;
+    width: 60px;
+    border: 2px solid aqua;
+    font-size: 30px;
+}
+  
+.hide {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.wrongIcon {
+    height: 5em;
+    width: 5em;
+    color: red;
+}
+.myContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+.ngh1 {
+    font-weight: 400;
+}
+.ngbody {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    background-color: #d3d7d8;
+    color: black
+}
+footer {
+    font-size: large;
+    padding-bottom: 5px;
+    position:relative;
+    text-align: center;
+}
