@@ -19,8 +19,12 @@ nav {
 }
 .skills {
     align-self: center;
-    margin: 3% 10%
+    margin: 5% 10%
 
+}
+.projects {
+    align-self: center;
+    margin: 3% 10%
 }
 .myImg {
     height: 100px;
@@ -36,9 +40,14 @@ nav {
     align-self: center;
 }
 .contact {
-    margin: 0 auto;
-    width: 30%
+    margin: 9% auto;
+    width: 40%
 }
+@media only screen and (max-width: 1000px) {
+    .contact{
+      width: 80%
+    }
+  }
 .contact button {
     margin: 10% 45%;
 }

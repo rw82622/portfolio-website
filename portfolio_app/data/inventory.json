@@ -1,0 +1,32 @@
+{
+    "footwear": [
+        {"id":1,"name": "Womens Beach Sandals","imageUrl": "images/sandals.jpg","price": 20},
+        {"id":2,"name": "Mens Nike Zoom Pegasus 36","imageUrl": "images/pegasus.jpg","price": 120.50},
+        {"id":3,"name": "Mens Nike Air Jordan 9 Retro","imageUrl": "images/jordan.jpg","price": 439.95},
+        {"id":4,"name": "Womens Lace Flowers Heels","imageUrl": "images/heels.jpg","price": 42.98}
+    ],
+    "fitness": [
+        {"id":1,"name": "NordicTrack Treadmill","imageUrl": "images/treadmill.jpg","price": 649.95},
+        {"id":2,"name": "Schwinn Indoor Bike","imageUrl": "images/indoorBike.jpg","price": 785.99},
+        {"id":3,"name": "Weider XRS Home Gym","imageUrl": "images/homeGym.jpg","price": 378.49},
+        {"id":4,"name": "Flybird Workout Bench","imageUrl": "images/bench.jpg","price": 139.99}
+    ],
+    "electronics": [
+        {"id":1,"name": "Sony 55 inch TV","imageUrl": "images/sony.jpg","price": 998.49},
+        {"id":2,"name": "Apple Airpods Pro","imageUrl": "images/airpodsPro.jpg","price": 199.98},
+        {"id":3,"name": "HP DeskJet Printer","imageUrl": "images/printer.jpg","price": 84.89},
+        {"id":4,"name": "ASUS VivoBook Flip 14","imageUrl": "images/asus.jpg","price": 400.99}
+    ],
+    "books": [
+        {"id":1,"name": "Introduction to Java","imageUrl": "images/java.jpg","price": 109.32},
+        {"id":2,"name": "Introduction to Python","imageUrl": "images/python.jpg","price": 34.95},
+        {"id":3,"name": "Introduction to React","imageUrl": "images/react.jpg","price": 49.19},
+        {"id":4,"name": "Introduction to Django","imageUrl": "images/django.jpg","price": 46.29}
+    ],
+    "homepage": [
+        {"name": "Footwear","imageUrl": "images/converse.jpg", "toLink": "/footwear"},
+        {"name": "Fitness","imageUrl": "images/homeFitness.png", "toLink": "/fitness"},
+        {"name": "Electronics","imageUrl": "images/homeElectronics.jpg", "toLink": "/electronics"},
+        {"name": "Books","imageUrl": "images/homeBook.jpg", "toLink": "/books"}
+    ]
+}

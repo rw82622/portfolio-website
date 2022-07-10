@@ -1,0 +1,15 @@
+{% extends "portfolio_app/search.html" %}
+{% block div %}
+<div class="card">
+  <img src="{{ response.icon.preview_url }}" alt="{{ response.term }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ response.icon.term }}</h5>
+    <button id="addToCart" class="btn btn-dark" disabled>Out of Stock</button>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}
+<footer style="text-align: center; font-size: large" class="fixed-bottom">
+        <strong>&copy 2022 Rexford Wiafe</strong>
+    </footer>
+{% endblock%}

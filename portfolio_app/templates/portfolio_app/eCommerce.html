@@ -1,0 +1,21 @@
+{% extends "portfolio_app/eCommerceLayout.html" %} {% block title %}<title>Home</title>{% endblock %}
+{% block content %}
+  <div id="jabra"><img src="https://images-na.ssl-images-amazon.com/images/G/01/us-manual-merchandising/1500x400_animatedbanner.gif"      alt="Jabra Elite 4 Active">
+  </div>
+  <div id = "home-top-left" class="vstack gap-5">
+    <h2 style="font-size: 3em">Stars, Stripes, and Savings</h2>
+    <h4><strong class="red">Extra 20% off Storewide</strong> with code: REXTHEGREAT</h4>
+    <H4>FREE Same Day Delivery for <span class="red">Vets</span></H4>
+  </div>
+  <div class="cardDiv">
+    {% for item in inventory.homepage %}
+    <div class="card">
+      <img src="../static/{{item.imageUrl}}" alt="{{ item.name }}">
+      <div class="card-body">
+        <h2 class="card-title">{{ item.name }}</h2>
+        <a href="{{ item.toLink }}" class="btn btn-success">Shop Now</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}

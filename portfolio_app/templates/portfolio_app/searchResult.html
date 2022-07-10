@@ -1,0 +1,15 @@
+{% extends "portfolio_app/search.html" %}
+{% block div %}
+<div style="margin-top:30px" class="cardDiv">
+    {% for item in data %}
+    <div class="card">
+      <img src="../static/{{item.imageUrl}}" class="productImage" alt="{{ item.name }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <h6 class="card-text">${{ item.price }}</h6>
+        <button class="btn addToCart-button">Add to Cart</button>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}

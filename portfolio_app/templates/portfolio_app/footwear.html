@@ -1,0 +1,24 @@
+{% extends "portfolio_app/eCommerceLayout.html" %} {% block title %}<title>Footwear</title>{% endblock %}
+{% block content %}
+<h1 style="font-size: 3em">Welcome to the Footwear Page</h1>
+<div id="footwearBannerWrapper">
+  <img src="https://target.scene7.com/is/image/Target/StripBar_D_-220303-1646356534996?wid=2160&qlt=80&fmt=webp" alt="">
+  <div class="imgText">
+  <h2>Kick off Sandal Season<br>from $10</h2>
+  <h3><span class="red">Hurry, Sale Ends Soon</span></h3>
+</div>
+<div><img src="https://finishline.a.bigcontent.io/v1/static/JD_012721_STATUS_HeroBanner_Desktop_1213x300_V2"></div>
+</div>
+<div class="cardDiv">
+  {% for item in inventory.footwear %}
+  <span class="card" data-id="footwear{{ item.id }}">
+    <img src="../static/{{item.imageUrl}}" class="productImage card-img-top" alt="{{ item.name }}">
+    <span class="card-body">
+      <h5 class="card-title">{{ item.name }}</h5>
+      <h6 class="card-text">${{ item.price }}</h6>
+      <button class="btn addToCart-button">Add to Cart</button>
+    </span>
+  </span>
+  {% endfor %}
+</div>
+{% endblock %}

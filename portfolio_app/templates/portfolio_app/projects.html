@@ -1,6 +1,6 @@
 {% extends 'portfolio_app/layout.html' %}
 {% block div %}
-<div class="skills">
+<div class="projects">
 <div id="myCarousel" class="carousel slide" data-bs-ride="true">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -12,10 +12,10 @@
         <a href="/numberGuessingGame"><img src="../static/images/numberGuess.png" class="d-block w-100" alt="Number Guessing Game"></a>
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <a href="/eCommerce" target="_blank"><img src="../static/images/eCommerce.png" class="d-block w-100" alt="E-Commerce Store"></a>
       </div>
       <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
+        <a href="/numberGuessingGame"><img src="../static/images/numberGuess.png" class="d-block w-100" alt="Number Guessing Game"></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -28,4 +28,9 @@
     </button>
   </div>
 </div>
+{% endblock %}
+{% block footer %}
+    <footer class="fixed-bottom">
+        <strong>&copy 2022 Rexford Wiafe</strong>
+    </footer>
 {% endblock %}

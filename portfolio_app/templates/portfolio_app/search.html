@@ -1,0 +1,23 @@
+{% extends "portfolio_app/eCommerceLayout.html" %} {% block title %}
+<title>Search Page</title>
+<style>
+  body {
+    background-image: url('../static/images/running.jpg');
+    background-size: cover;
+  }
+</style> 
+{% endblock %}
+{% block content %}
+<div style="justify-items: center;">
+  <form method="POST" id="myForm" class="hstack gap-3 m-auto">
+    {% csrf_token %}
+      <input id='searchBox' type="text" name="name" placeholder="Enter Item name" class="form-control"/>
+      <button type="submit" class="btn btn-dark">Submit</button>
+  </form>
+</div>
+{% endblock %}
+{% block footer %}
+<footer style="text-align: center; font-size: large" class="fixed-bottom">
+        <strong>&copy 2022 Rexford Wiafe</strong>
+    </footer>
+{% endblock%}

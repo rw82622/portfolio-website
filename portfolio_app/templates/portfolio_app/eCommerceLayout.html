@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Store</title>
+    {% endblock %}
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../static/css/eCommerce.css">
+    <script src="../static/js/eCommerce.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" defer></script>
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/eCommerce">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="/footwear">Footwear</a></li>
+                    <li><a class="dropdown-item" href="/fitness">Fitness</a></li>
+                    <li><a class="dropdown-item" href="/electronics">Electronics</a></li>
+                    <li><a class="dropdown-item" href="/books">Books</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/search">Search</a>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cartModal">Cart
+                <span id="cartTotal" class="badge text-bg-secondary">0</span>
+              </button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+
+    <div id='myToast' class="toast text-bg-primary fixed-bottom" role="alert" aria-live="assertive">
+      <div class="d-flex">
+        <div class="toast-body">
+          <strong>Product Added to Cart</strong>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+
+
+    <div class="modal" id="cartModal" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="cartModalLabel">Shopping Cart</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Sub-total</th>
+                </tr>
+              </thead>
+              <tbody id="cartTable"></tbody>
+            </table>
+          </div>
+          <div class="modal-footer hstack gap-5">
+            <h4 id="cartTotalPrice"></h4>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% block content %}{% endblock %}
+    {% block div %} {% endblock %}
+    {% block footer %}
+    <footer style="text-align: center; font-size: large">
+        <strong>&copy 2022 Rexford Wiafe</strong>
+    </footer>
+    {% endblock %}
+</body>
+</html>
