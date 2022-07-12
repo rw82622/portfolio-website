@@ -15,9 +15,6 @@ def projects(request):
 def skills(request):
     return render(request, 'portfolio_app/skills.html')
 
-def contact(request):
-        return render(request, 'portfolio_app/contact.html')
-
 def number_guessing_game(request):
     return render(request, 'portfolio_app/numberGuess.html')
 

@@ -19,12 +19,12 @@ nav {
 }
 .skills {
     align-self: center;
-    margin: 5% 10%
+    margin: 4% 10%
 
 }
 .projects {
     align-self: center;
-    margin: 3% 10%
+    margin: 2% 10%
 }
 .myImg {
     height: 100px;
@@ -38,18 +38,6 @@ nav {
 }
 .about {
     align-self: center;
-}
-.contact {
-    margin: 9% auto;
-    width: 40%
-}
-@media only screen and (max-width: 1000px) {
-    .contact{
-      width: 80%
-    }
-  }
-.contact button {
-    margin: 10% 45%;
 }
 .orange{
     color: rgb(181,137,0);
@@ -101,7 +89,17 @@ h1 {
 }
 footer {
     font-size: large;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     position:relative;
     text-align: center;
+}
+.myContact1 {
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+}
+.myContact2 {
+    width: 40px;
+    height: 40px;
 }
